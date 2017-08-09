@@ -15,6 +15,7 @@
 		A5959A3F1F3AD8B600916570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5959A3D1F3AD8B600916570 /* LaunchScreen.storyboard */; };
 		A5959A4A1F3AD8B600916570 /* TeccentSonicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5959A491F3AD8B600916570 /* TeccentSonicDemoTests.m */; };
 		A5959A551F3AD8B600916570 /* TeccentSonicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5959A541F3AD8B600916570 /* TeccentSonicDemoUITests.m */; };
+		A5959A631F3ADD6700916570 /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5959A621F3ADD6700916570 /* Sonic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A5959A501F3AD8B600916570 /* TeccentSonicDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeccentSonicDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5959A541F3AD8B600916570 /* TeccentSonicDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeccentSonicDemoUITests.m; sourceTree = "<group>"; };
 		A5959A561F3AD8B600916570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5959A621F3ADD6700916570 /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sonic.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5959A631F3ADD6700916570 /* Sonic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 		A5959A2E1F3AD8B600916570 /* TeccentSonicDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5959A621F3ADD6700916570 /* Sonic.framework */,
 				A5959A321F3AD8B600916570 /* AppDelegate.h */,
 				A5959A331F3AD8B600916570 /* AppDelegate.m */,
 				A5959A351F3AD8B600916570 /* ViewController.h */,
@@ -207,8 +211,7 @@
 				TargetAttributes = {
 					A5959A2B1F3AD8B600916570 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = F8GY9XXT4N;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					A5959A441F3AD8B600916570 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -427,11 +430,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F8GY9XXT4N;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TeccentSonicDemo",
+				);
 				INFOPLIST_FILE = TeccentSonicDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bill.TeccentSonicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -439,11 +447,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F8GY9XXT4N;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TeccentSonicDemo",
+				);
 				INFOPLIST_FILE = TeccentSonicDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bill.TeccentSonicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -516,6 +529,7 @@
 				A5959A5B1F3AD8B600916570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5959A5C1F3AD8B600916570 /* Build configuration list for PBXNativeTarget "TeccentSonicDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +538,7 @@
 				A5959A5E1F3AD8B600916570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5959A5F1F3AD8B600916570 /* Build configuration list for PBXNativeTarget "TeccentSonicDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +547,7 @@
 				A5959A611F3AD8B600916570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

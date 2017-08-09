@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
+#import <Sonic/Sonic.h>
+
+static NSString *testUrlString = @"http://mc.vip.qq.com/demo/indexv3?offline=1";
+
 @interface AppDelegate ()
 
 @end
@@ -16,8 +21,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [NSURLProtocol registerClass:[SonicURLProtocol class]];
+    
+    ViewController *v = [[ViewController alloc] initWithUrl:testUrlString];
+  
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:v];
+    
+    self.window.rootViewController = nav;
+    
     return YES;
+    
 }
 
 
