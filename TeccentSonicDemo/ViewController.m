@@ -29,6 +29,9 @@
         //在初始化ViewController的时候发起sonic的请求
         //使用sonic链接创建一个会话
         [[SonicClient sharedClient] createSessionWithUrl:self.url withWebDelegate:self];
+   
+        self.title = @"Sonic";
+        
     }
     
     return self;
@@ -58,6 +61,7 @@
     }else{
         [self.wkWebV loadRequest:urlRequest];
     }
+    
 }
 
 - (void)viewDidLoad {
