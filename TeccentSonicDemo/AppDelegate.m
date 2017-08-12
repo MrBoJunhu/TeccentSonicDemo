@@ -11,7 +11,6 @@
 #import "ViewController.h"
 #import <Sonic/Sonic.h>
 
-static NSString *testUrlString = @"http://mc.vip.qq.com/demo/indexv3?offline=1";
 
 @interface AppDelegate ()
 
@@ -24,7 +23,7 @@ static NSString *testUrlString = @"http://mc.vip.qq.com/demo/indexv3?offline=1";
 
     [NSURLProtocol registerClass:[SonicURLProtocol class]];
     
-    ViewController *v = [[ViewController alloc] initWithUrl:testUrlString];
+    ViewController *v = [[ViewController alloc] init];
   
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:v];
     

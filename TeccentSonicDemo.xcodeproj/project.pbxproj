@@ -16,6 +16,7 @@
 		A5959A4A1F3AD8B600916570 /* TeccentSonicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5959A491F3AD8B600916570 /* TeccentSonicDemoTests.m */; };
 		A5959A551F3AD8B600916570 /* TeccentSonicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5959A541F3AD8B600916570 /* TeccentSonicDemoUITests.m */; };
 		A5959A631F3ADD6700916570 /* Sonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5959A621F3ADD6700916570 /* Sonic.framework */; };
+		A5959A661F3BE90E00916570 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5959A651F3BE90E00916570 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A5959A541F3AD8B600916570 /* TeccentSonicDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeccentSonicDemoUITests.m; sourceTree = "<group>"; };
 		A5959A561F3AD8B600916570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5959A621F3ADD6700916570 /* Sonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sonic.framework; sourceTree = "<group>"; };
+		A5959A641F3BE90E00916570 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		A5959A651F3BE90E00916570 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				A5959A331F3AD8B600916570 /* AppDelegate.m */,
 				A5959A351F3AD8B600916570 /* ViewController.h */,
 				A5959A361F3AD8B600916570 /* ViewController.m */,
+				A5959A641F3BE90E00916570 /* WebViewController.h */,
+				A5959A651F3BE90E00916570 /* WebViewController.m */,
 				A5959A381F3AD8B600916570 /* Main.storyboard */,
 				A5959A3B1F3AD8B600916570 /* Assets.xcassets */,
 				A5959A3D1F3AD8B600916570 /* LaunchScreen.storyboard */,
@@ -283,6 +288,7 @@
 				A5959A371F3AD8B600916570 /* ViewController.m in Sources */,
 				A5959A341F3AD8B600916570 /* AppDelegate.m in Sources */,
 				A5959A311F3AD8B600916570 /* main.m in Sources */,
+				A5959A661F3BE90E00916570 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

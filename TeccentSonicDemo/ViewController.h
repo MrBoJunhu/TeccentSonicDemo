@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Sonic/Sonic.h>
-@interface ViewController : UIViewController<SonicSessionDelegate,UIWebViewDelegate>
 
-- (instancetype)initWithUrl:(NSString *)aUrl;
+@interface ViewController : UIViewController
 
 @end
 
